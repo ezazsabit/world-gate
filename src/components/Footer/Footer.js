@@ -10,6 +10,7 @@ const Footer = () => {
     useEffect(() => {
         getYear();
     }, [])
+    console.log(123);
     return (
         <div className='footer'>
             copyright©{date}bySabit
