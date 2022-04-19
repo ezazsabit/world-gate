@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialAuth from '../SocialAuth/SocialAuth';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signin = () => {
+    const emailRef = useRef('');
     const[email,setEmail]=useState('');
     const[password,setPassword]=useState('');
     const [
@@ -14,6 +18,14 @@ const Signin = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+      const [sendPasswordResetEmail, sending,] = useSendPasswordResetEmail(
+        auth
+      );
+      const resetPass=async () => {
+        const email=emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        toast('Sent email');
+      }
       let location = useLocation();
       let from = location.state?.from?.pathname || "/";
       const navigate=useNavigate();
@@ -60,8 +72,10 @@ const Signin = () => {
 </form>
             </div>
             <p>New to World-Gate? <Link to='/signup' className='text-decoration-none'> <span className='text-danger'>Please Register</span></Link></p>
+            <p>Forget Password? <span onClick={()=>resetPass()} className='text-decoration-none'> <span className='text-danger'>Reset Password</span></span></p>
           
           <SocialAuth></SocialAuth>
+          <ToastContainer />
         </div>
     );
 };

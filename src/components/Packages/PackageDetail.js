@@ -13,37 +13,37 @@ const data=[
     
       picture: "Image/Package/package1.jpg",
       placename: "Rangamati",
-      description: "Culpa consectetur elit ad laboris aute consequat qui sint qui irure. Dolore esse tempor dolore in. Aliqua mollit est nostrud nulla aute cillum do sint laboris cupidatat. Ullamco eiusmod in aliquip dolor esse in aliquip aliqua ad veniam ea consequat consequat enim. Laborum proident labore aute dolore amet excepteur velit laboris. Fugiat culpa fugiat deserunt labore excepteur adipisicing consectetur. Commodo in aliqua aute ipsum cillum veniam eiusmod velit Lorem dolore sit minim labore exercitation.\r\n"
+      description: "Rangamati is the most popular destination in the Chittagong Hill Tracts for Bangladeshi visitors, who come to enjoy the scenic splendour of Kaptai Lake, the country’s largest artificial lake, which was created in 1960 for hydroelectricity. The lake, dotted with islands, is unquestionably beautiful, and a boat trip across it is a fantastic way to spend a day out here, but it’s worth knowing that approximately 100,000 Adivasis – mostly Chakma – were displaced when it was created, and around 40% of the land they previously cultivated was submerged forever."
     },
     {
       
      picture: "Image/Package/package2.jpg",
       placename: "Cox's Bazar",
-      description: "Qui sint laboris ipsum deserunt non elit eiusmod. Laborum incididunt anim anim ut labore cupidatat nulla deserunt. Nulla ut nulla commodo cupidatat nostrud enim culpa in duis duis sit dolore aliqua sit. Do in quis enim dolore commodo minim. Enim culpa velit sit veniam non veniam nulla.\r\n"
+      description: "Cox's Bazar – named for an 18th-century British East India Company captain – is a place dear to most Bangladeshis' hearts. As everyone you meet will tell you, it's the longest continual natural beach on the planet (a whopping 125km), and the place where the country likes to come to relax."
     },
     {
      
       picture: "Image/Package/package3.jpeg",
       placename:" Bandarban",
-      description: "Cillum aliqua cupidatat amet elit et. Consectetur Lorem ex ex ullamco sunt et officia. Commodo do elit occaecat proident velit consectetur voluptate excepteur tempor mollit officia minim do cillum.\r\n"
+      description: "Bandarban  (chittagong division) area 4479.03 sq km, located in between 21°11' and 22°22' north latitudes and in between 92°04' and 92°41' east longitudes. It is bounded by rangamati district on the north, Arakan (Myanmar) on the south, Chin Province (Myanmar) and Rangamati district on the east, chittagong and cox's bazar district on the west. Marmiana Tang, Bathil Tang, Kewkradang, Langfi Tang, Lakpang Tang, Thaingkiang Tang, Moudak Tang, Murangiang Tang, Rungrang Tang, Naprai Tang, Murifa Tang, Busi Tang, and Sara Tang are the notable hills of this district.Population Total 298120; male 162133, female 135987; Muslim 147072, Hindu 10796, Buddhist 28546, Christian 103997 and others 7719. Indigenous community such as marma, chakma, bawm, Murong, Tripura, khyang, khumee, and lushei belong to this upazila."
     },
     {
       
       picture: "Image/Package/package4.jpg",
       placename: "Sundarban",
-      description: "Nulla ipsum anim eiusmod fugiat reprehenderit dolor exercitation quis magna incididunt. Ullamco quis ipsum anim minim do proident nisi. Excepteur in mollit ea in ipsum ut consequat nulla ullamco. Nulla irure ea aliqua officia reprehenderit minim duis eiusmod magna excepteur. Esse laboris elit qui fugiat magna exercitation cupidatat enim amet voluptate. Laboris irure aute labore consectetur veniam quis occaecat nulla laboris.\r\n"
+      description:  "Sundarbans, The largest single block of tidal halophytic mangrove forest in the world, located in the southwestern part of Bangladesh. It lies on the Ganges-Brahmaputra Delta at the point where it merges with the bay of bengal. The forest lies a little south to the Tropic of Cancer between the latitudes 21°30'N and 22°30'N, and longitudes 89°00'E and 89°55'E. With its array of trees and wildlife the forest is a showpiece of natural history. It is also a centre of economic activities, such as extraction of timber, fishing and collection of honey. The forest consists of about 200 islands, separated by about 400 interconnected tidal rivers, creeks and canals."
     },
     {
       
       picture: "Image/Package/package5.jpg",
       placename: "Jaflong",
-      description: "Ea esse ullamco nostrud duis dolor consequat. Est consequat veniam dolore nulla et cillum voluptate. Ullamco duis Lorem cupidatat eu commodo sunt incididunt id. Veniam laboris do esse quis ad laboris esse proident duis tempor minim laboris commodo eu. Consectetur mollit mollit do duis velit in excepteur exercitation sunt tempor amet.\r\n"
+      description:  "Jaflong is a hill station and tourist destination in the Division of Sylhet, Bangladesh. It is located in Gowainghat Upazila of Sylhet District and situated at the border between Bangladesh and the Indian state of Meghalaya, overshadowed by subtropical mountains and rainforests."
     },
     {
      
       picture: "Image/Package/package6.jpeg",
       placename: "Moynamoti",
-      description: "Sit elit proident cupidatat consequat dolor qui aute quis. Ullamco pariatur nulla id sint voluptate ullamco aliquip fugiat proident amet Lorem aliquip anim deserunt. Cupidatat ea reprehenderit dolor sunt labore officia occaecat magna tempor nisi reprehenderit consectetur esse occaecat. Adipisicing officia eu elit ullamco ipsum magna minim ad officia Lorem id. Occaecat labore duis excepteur minim aliquip velit adipisicing cupidatat veniam culpa adipisicing ea proident. Esse incididunt ea duis proident. Duis ullamco tempor duis do consequat.\r\n"
+      description:  "Moinamoti is an isolated low, dimpled range of hills, dotted with more than 50 ancient Buddhist settlements dating between the 8th and 12th century CE. It was part of the ancient Tripura division of Bengal. It extends through the centre of the district of Comilla in Bangladesh."
     }
   ]
   const searchData=data.filter(searched=>searched.placename===params.searchPackage)

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialAuth from './SocialAuth/SocialAuth';
 
@@ -33,21 +33,25 @@ const Signup = () => {
         user
     
        
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+     
       const navigate=useNavigate();
       if(user){
      navigate('/home')
       }
+      
     const handleCreateUser=event=>{
         event.preventDefault();
-        console.log('ashche')
-        console.log(email)
-        console.log(password)
+        // console.log('ashche')
+        // console.log(email)
+        // console.log(password)
         // if(password!== confirmpassword){
         //     setError('Your two password are not same')
         //     return;
         // }
-       createUserWithEmailAndPassword(email, password)
+       createUserWithEmailAndPassword(email, password);
+    
+       
     }
    
      
