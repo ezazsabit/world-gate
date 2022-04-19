@@ -1,0 +1,29 @@
+[debug] [2022-04-18T03:55:54.949Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T03:55:54.951Z] Command:       M:\node.js programming_hero\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-18T03:55:54.951Z] CLI Version:   10.6.0
+[debug] [2022-04-18T03:55:54.951Z] Platform:      win32
+[debug] [2022-04-18T03:55:54.952Z] Node Version:  v16.13.1
+[debug] [2022-04-18T03:55:54.953Z] Time:          Mon Apr 18 2022 09:55:54 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-04-18T03:55:54.953Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T03:55:54.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T03:55:54.960Z] > authorizing via signed-in user (ezazsabit03@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  M:\programming hero\Assignment-10\world-gate
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
